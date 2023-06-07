@@ -1,0 +1,43 @@
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.login h1 {
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.form-control label {
+    color: blue;
+    padding: 10px;
+}
+.form-control input , textarea{
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#username,
+#password {
+    width: 300px;
+}
