@@ -16,7 +16,7 @@ const Login = () => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(users => {
-                const User = users.find(user => user.username === username);
+                const User = users.find(user => user.email === username);
                 if (User) {
                     setIsLoggedIn(true);
                     sessionStorage.setItem('user', JSON.stringify(User));
