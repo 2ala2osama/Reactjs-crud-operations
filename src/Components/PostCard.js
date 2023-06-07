@@ -41,12 +41,13 @@ const PostCard = ({ post, onDelete, onEdit }) => {
         <div className="post-card">
             <h2>{post.title}</h2>
             <p>{post.body}</p>
-            <h4>Comments:</h4>
+            <div>
             <ul>
                 {comments.map((comment) => (
                     <li key={comment.id}>{comment.body}</li>
                 ))}
-            </ul>
+                </ul>
+            </div>
             <div className='button-actions'>
                 <Button variant="contained" onClick={handleDelete}>Delete</Button>
                 <Button variant="contained" onClick={handleEdit}>
